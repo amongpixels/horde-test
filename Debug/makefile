@@ -43,7 +43,7 @@ all: horde-test
 horde-test: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/home/dragomir/Dropbox/diss/irrlicht/lib/linux -o "horde-test" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/home/dragomir/Dropbox/diss/irrlicht/lib/Linux `pkg-config --libs gtk+-3.0` -o "horde-test" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lIrrlicht
+LIBS := -lIrrlicht -lpthread -lGL -lXxf86vm -lXext -lX11
 
